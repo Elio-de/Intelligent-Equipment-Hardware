@@ -1,0 +1,12 @@
+* project4 buck: 24V -> 5V, 570kHz behavioral switch
+Vin vin 0 24
+Vpwm pwm 0 PULSE(0 5 0 20n 20n 0.36u 1.754u)
+S1 vin sw pwm 0 SW1
+D1 0 sw DFW
+L1 sw out 10u
+C1 out 0 44u
+Rload out 0 1.67
+.model SW1 SW(Ron=0.05 Roff=1meg Vt=2.5)
+.model DFW D(Is=1e-9 Rs=0.02)
+.tran 0 5m 0 0.1u
+.end

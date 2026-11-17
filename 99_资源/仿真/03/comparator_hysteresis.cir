@@ -1,0 +1,9 @@
+* comparator_hysteresis.cir - inverting Schmitt trigger
+V1 in 0 0
+R1 in p 10k
+R2 p out 100k
+Vref ref 0 1.65
+B1 out 0 V=3.3*tanh(1000*(V(p)-V(ref)))
+.dc V1 0 3.3 0.005
+.probe
+.end

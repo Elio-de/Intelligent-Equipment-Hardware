@@ -1,0 +1,11 @@
+* mosfet_switch.cir - logic-level NMOS low-side switch
+V1 pwm 0 PULSE(0 3.3 0 100n 100n 25u 50u)
+Rg pwm g 100
+Rpd g 0 10k
+Vdd vdd 0 12
+Rl vdd d 6
+M1 d g 0 0 IRLZ44N
+.model IRLZ44N NMOS(Vto=1.8 Kp=20 Cgdmax=1n Cgs=2n)
+.tran 0 2m 0 10n
+.probe
+.end

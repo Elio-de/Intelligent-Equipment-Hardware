@@ -1,0 +1,7 @@
+* rc_step.cir - RC charging, tau = 1 ms
+V1 in 0 PULSE(0 3.3 0 1u 1u 10m 20m)
+R1 in out 10k
+C1 out 0 100n
+.tran 0 10m 0 10u
+.probe
+.end

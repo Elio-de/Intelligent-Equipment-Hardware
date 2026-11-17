@@ -1,0 +1,11 @@
+Ref,Value,Description,Package,Qty,Notes
+U1,DRV8871,集成H桥,HSOP-8,1,45V/3.6A峰值；内置限流
+M1,12V 10W,有刷直流电机,自定义,1,12V/10W级
+F1,2A,慢断保险丝,插片/座,1,输入保护
+D1,SMBJ18A,TVS,SMB,1,12V母线
+C1,470uF/25V,电解电容,径向,1,母线储能
+C2,100nF/50V,陶瓷电容,0603,1,高频去耦
+R1,1k/2W,泄放电阻,2512,1,断电泄放
+R2,按DS,RILIM电阻,0603,1,设1.5A限流
+J1,2P,电机端子,5.08mm,1,OUT1/OUT2
+J2,4P,逻辑端子,2.54mm,1,PWM/IN1/IN2/GND

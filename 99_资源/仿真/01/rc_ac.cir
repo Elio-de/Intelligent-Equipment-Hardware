@@ -1,0 +1,7 @@
+* rc_ac.cir - first-order low-pass, fc = 1.59 kHz
+V1 in 0 AC 1
+R1 in out 10k
+C1 out 0 10n
+.ac dec 100 10 1Meg
+.probe
+.end

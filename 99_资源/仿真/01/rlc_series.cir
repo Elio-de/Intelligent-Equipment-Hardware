@@ -1,0 +1,8 @@
+* rlc_series.cir - underdamped RLC step (zeta = 0.25)
+V1 in 0 PULSE(0 1 0 1u 1u 2m 4m)
+R1 in n1 0.5
+L1 n1 n2 10u
+C1 n2 0 10u
+.tran 0 0.4m 0 0.1u
+.probe
+.end

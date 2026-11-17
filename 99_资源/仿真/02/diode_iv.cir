@@ -1,0 +1,8 @@
+* diode_iv.cir - 1N4148 forward characteristic
+V1 in 0 0
+R1 in d 1k
+D1 d 0 D1N4148
+.model D1N4148 D(Is=2.52n N=1.752 Rs=0.568 Cjo=4p)
+.dc V1 0 0.8 0.005
+.probe
+.end

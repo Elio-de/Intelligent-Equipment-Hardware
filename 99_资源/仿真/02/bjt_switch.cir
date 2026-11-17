@@ -1,0 +1,10 @@
+* bjt_switch.cir - NPN low-side switch
+V1 ctrl 0 PULSE(0 3.3 0 1u 1u 5m 10m)
+Rb ctrl b 1k
+Q1 c b 0 2N3904
+Vcc vcc 0 5
+Rc vcc c 220
+.model 2N3904 NPN(Is=6.7e-15 Bf=200 Vaf=100)
+.tran 0 10m 0 10u
+.probe
+.end

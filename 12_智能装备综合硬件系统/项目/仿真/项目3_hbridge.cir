@@ -1,0 +1,14 @@
+* project3 half-bridge behavioral: PWM + RL load + freewheel
+Vdc vdc 0 24
+Vpwm pwm 0 PULSE(0 5 0 100n 100n 25u 50u)
+S1 vdc a pwm 0 SW1
+S2 a 0 pwm2 0 SW2
+Vpwm2 pwm2 0 PULSE(5 0 0 100n 100n 25u 50u)
+Lm a m 100u
+Rm m 0 4.8
+Dfw 0 a DFW
+.model SW1 SW(Ron=0.01 Roff=1meg Vt=2.5)
+.model SW2 SW(Ron=0.01 Roff=1meg Vt=2.5)
+.model DFW D(Is=1e-9 Rs=0.01)
+.tran 0 2m 0 1u
+.end

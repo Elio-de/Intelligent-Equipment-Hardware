@@ -1,0 +1,11 @@
+* project1 sensor frontend: divider + INA gain 10 + RC
+V1 vcc 0 3.3
+Rref vcc n1 3.3k
+Rpt n1 0 100
+Eina out 0 n1 0 10
+Rf out f 1k
+Cf f 0 100n
+Rload f 0 1meg
+.op
+.step param Rpt 100 180 20
+.end

@@ -1,0 +1,14 @@
+Ref,Value,Description,Package,Qty,Notes
+U1,STM32G431,ARM Cortex-M4,LQFP64,1,电机控制
+U2-U3,DRV8323,三相栅极驱动,QFN,2,65V/CSA
+Q1-Q12,60V MOS,N-MOSFET,PowerPAK/D2PAK,12,6/轴
+R1-R6,5mΩ,3W 分流,2512,6,3/轴
+C1,2200uF,电解,径向,1,35V 母线
+C2-C7,10uF,陶瓷,1210,6,桥臂去耦
+U4,TCAN334,CAN收发器,SOIC-8,1,3.3V
+U5,ISO3082,隔离RS-485,SOIC-16,1,3.3V/1kV
+U6,B0505S,隔离电源,SIP-4,1,5V/5V
+K1,安全继电器,急停,导轨/板载,1,硬件切断
+J1-J4,编码器/电机/通信,连接器,按需,4,防呆
+F1,15A,保险丝,座,1,母线
+TVS1-4,33V,SMB,4,母线/接口
